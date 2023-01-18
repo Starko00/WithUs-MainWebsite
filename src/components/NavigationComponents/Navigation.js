@@ -2,7 +2,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import NavigationStyle from "./NavigationStyle.module.css";
 import { useState } from "react";
 import logo from "../../resources/img/logo.png";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export const Navigation = () => {
   const [menuState, setMenuState] = useState(false);
   const changeMenuState = () => {
@@ -69,7 +69,6 @@ export const Navigation = () => {
       <div className={style.logoHolder}>
         <div>
           <button className="buttonMainMobile">Get in touch</button>
-          
         </div>
         <img src={logo} alt="logo" />
       </div>
