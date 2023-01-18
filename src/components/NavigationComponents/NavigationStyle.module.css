@@ -1,0 +1,302 @@
+.link {
+  text-decoration: none;
+  color: var(--textMainColor);
+}
+@media only screen and (min-width: 1025px) {
+  .NavigationHolder {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menuIconsHolder {
+    display: none;
+  }
+  .logoHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoHolder img {
+    width: 100px;
+  }
+  @keyframes lineAnimation {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .menuItemsHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 2.5rem;
+    color: var(--textMainColor);
+  }
+  .menuItemsHolder li:hover {
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+  }
+  .menuItemsHolder li:hover::before {
+    content: "";
+
+    position: absolute;
+    top: -2.5859rem;
+    border-radius: 3.5px;
+    width: 100%;
+    height: 3.5px;
+    background-color: var(--darkPurple);
+    animation: lineAnimation 0.2s ease-in-out forwards;
+  }
+  .link:active {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  @keyframes menuOpenAnimation {
+    from {
+      height: 0rem;
+      opacity: 0;
+    }
+    to {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+  .link {
+    color: white;
+  }
+
+  .NavigationHolder[data-menu="true"] {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    animation: menuOpenAnimation 0.5s ease-in-out 0s forwards;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    background-image: var(--gradient);
+    height: 100%;
+    width: 100%;
+  }
+
+  .NavigationHolder[data-menu="false"] {
+    display: flex !important;
+    position: fixed;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 30px;
+    flex-direction: column;
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: fixed;
+    top: 0rem;
+  }
+
+  .MenuIconMobileOpen[data-menu="false"] {
+    font-size: 2.85rem;
+    color: var(--textMainColor);
+  }
+  .MenuIconMobileOpen[data-menu="true"] {
+    display: none;
+  }
+
+  .menuIconsHolder[data-menu="false"] {
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: fixed;
+    top: 0rem;
+
+  }
+
+  .menuItemsHolder[data-menu="true"] {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 1.525rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .menuItemsHolder[data-menu="false"] {
+    display: none;
+  }
+  .logoHolder {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  @keyframes menuOpenAnimation {
+    from {
+      height: 0rem;
+      opacity: 0.3;
+    }
+    to {
+      height: 100vh;
+      opacity: 1;
+    }
+  }
+  .link {
+    color: white;
+  }
+
+  .NavigationHolder[data-menu="true"] {
+    display: flex;
+    animation: menuOpenAnimation 0.5s ease-in-out 0s forwards;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    background-image: var(--gradient);
+    height: 100%;
+    width: 100%;
+  }
+
+  .NavigationHolder[data-menu="false"] {
+    display: flex !important;
+    position: fixed;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 30px;
+    flex-direction: column;
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: fixed;
+    top: 0rem;
+  }
+
+  .MenuIconMobileOpen[data-menu="false"] {
+    font-size: 2.225rem;
+    color: var(--textMainColor);
+  }
+  .MenuIconMobileOpen[data-menu="true"] {
+    display: none;
+  }
+
+  .menuIconsHolder[data-menu="false"] {
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: fixed;
+    top: 0rem;
+  }
+
+  .menuItemsHolder[data-menu="true"] {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 1.525rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .menuItemsHolder[data-menu="false"] {
+    display: none;
+  }
+  .logoHolder {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .link {
+    color: white;
+  }
+  .logoHolder {
+    display: none;
+  }
+  @keyframes menuOpenAnimation {
+    from {
+      height: 0rem;
+      opacity: 0;
+    }
+    to {
+      height: 100%;
+      opacity: 1;
+    }
+  }
+
+  .NavigationHolder[data-menu="true"] {
+    display: flex;
+    animation: menuOpenAnimation 0.5s ease-in-out 0s forwards;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    background-image: var(--gradient);
+    height: 100%;
+    width: 100%;
+  }
+
+  .NavigationHolder[data-menu="false"] {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 15px;
+    padding-top: 30px;
+    flex-direction: column;
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: fixed;
+    top: 0rem;
+  }
+
+  .MenuIconMobileOpen[data-menu="false"] {
+    font-size: 2.85rem;
+    color: var(--textMainColor);
+  }
+  .MenuIconMobileOpen[data-menu="true"] {
+    display: none;
+  }
+
+  .menuIconsHolder[data-menu="false"] {
+    right: 0rem;
+    padding-top: 1.625rem;
+    padding-right: 0.925rem;
+    position: absolute;
+    top: 0rem;
+  }
+
+  .menuItemsHolder[data-menu="true"] {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-size: 2.5rem;
+    gap: 1.525rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .menuItemsHolder[data-menu="false"] {
+    display: none;
+  }
+}
