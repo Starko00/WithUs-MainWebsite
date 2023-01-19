@@ -35,8 +35,12 @@ export const Footer = () => {
         <div className={style.container_down_left}>
           <div className={style.container_down_left_social}>
             <img src={fb} alt="social" />
-            <img src={insta} alt="social" />
-            <img src={ln} alt="social" />
+            <a href="https://www.instagram.com/withus.me/">
+              <img src={insta} alt="social" />
+            </a>
+            <a href="https://www.linkedin.com/company/withus-software-solutions/">
+              <img src={ln} alt="social" />
+            </a>
           </div>
           <p className={style.container_down_left_paragraph}>@2023 WithUs</p>
         </div>

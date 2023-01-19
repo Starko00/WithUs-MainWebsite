@@ -95,6 +95,9 @@
         margin-left: 100px;
         img {
           margin-right: 20px;
+          :hover {
+            cursor: pointer;
+          }
         }
       }
       &_paragraph {
@@ -166,6 +169,15 @@
       }
       &_name {
         font-size: 0.7498rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    &_down {
+      &_left {
+        width: 70%;
       }
     }
   }
