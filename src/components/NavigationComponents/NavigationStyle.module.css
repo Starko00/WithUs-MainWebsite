@@ -2,12 +2,11 @@
   text-decoration: none;
   color: var(--textMainColor);
 }
-.NavigationHolder{
+.NavigationHolder {
   z-index: 100;
 }
 @media only screen and (min-width: 1025px) {
   .NavigationHolder {
-   
     display: flex;
     position: fixed;
     width: 100%;
