@@ -43,7 +43,6 @@ export const HomePage = () => {
           technologies to make your business trive.
         </h2>
         <button className="buttonMainMobile">Get to know our team</button>
-        
       </div>
     </div>
   );
