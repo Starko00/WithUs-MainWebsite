@@ -7,7 +7,6 @@ export const HeroComponent = () => {
         With<span>US</span>
       </h1>
       <p>your business will pass the moon</p>
-      
     </div>
   );
 };
