@@ -5,6 +5,11 @@ import insta from "../../resources/img/instagram.svg";
 import ln from "../../resources/img/linkedin.svg";
 export const Footer = () => {
   const style = FooterStyle;
+  function search(e) {
+    if (e.keyCode === 13) {
+      alert(e.value);
+    }
+  }
   return (
     <div className={style.container}>
       <div className={style.container_up}>
@@ -12,8 +17,8 @@ export const Footer = () => {
           <p className={style.container_up_leftSide_paragraph}>
             Subscribe to our newsletter
           </p>
-          <div class={style.container_up_leftSide_inputbox}>
-            <input required="required" type="text" />
+          <div className={style.container_up_leftSide_inputbox}>
+            <input required="required" type="email" onKeyDown={search} />
             <span>Email</span>
             <i></i>
           </div>

@@ -3,6 +3,7 @@ import "./App.scss";
 import { Footer } from "./components/FooterComponents/Footer";
 import { Navigation } from "./components/NavigationComponents/Navigation";
 import { HomePage } from "./pages/HomePage";
+import { TeamPage } from "./pages/Team/TeamPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
         <Routes>
           <Route exacth path="/" element={<HomePage />} />
+          <Route exacth path="team" element={<TeamPage />} />
         </Routes>
         <Footer />
       </Router>
