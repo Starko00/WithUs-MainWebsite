@@ -26,7 +26,7 @@ export const Footer = () => {
             <br />
             81000 Podgorica, Montenegro
             <br />
-            +382 (67) 446 594
+            (+382)67819640
           </p>
         </div>
       </div>
