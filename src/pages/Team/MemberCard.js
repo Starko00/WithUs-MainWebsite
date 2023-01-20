@@ -4,7 +4,7 @@ import TeamStyle from "./TeamPageStyle.module.scss";
 export const MemberCard = (props) => {
   const style = TeamStyle;
   return (
-    <div className={style.container_member}>
+    <div className={style.container_member} data-position={props.card.positon}>
       <div className={style.container_member_img}>
         <img src={props.card.img} alt="member" />
         <svg
@@ -31,7 +31,8 @@ export const MemberCard = (props) => {
           </g>
         </svg>
       </div>
-      <div className={style.container_member_info}>
+
+      <div className={style.container_member_info} >
         <h2 className={style.container_member_info_name}>{props.card.name}</h2>
         <p className={style.container_member_info_about}>{props.card.info}</p>
       </div>

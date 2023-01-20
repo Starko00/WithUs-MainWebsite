@@ -1,4 +1,5 @@
 import React from "react";
+
 import { MemberCard } from "./MemberCard";
 import TeamStyle from "./TeamPageStyle.module.scss";
 import { cardData } from "./MemberData";

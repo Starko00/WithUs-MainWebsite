@@ -1,11 +1,10 @@
 .container {
-  height: 100%;
-  min-height: 100vh;
   padding: 100px 20px 20px 20px;
 
   &_heading {
-    font-size: 90px;
+    font-size: 7.5rem;
     font-weight: 700;
+    line-height: 7rem;
     color: #272727;
     word-wrap: break-word;
     max-width: 1040px;
@@ -14,14 +13,19 @@
   }
   &_member {
     display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    padding-left: 150px;
     &_img {
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       z-index: 1;
 
       img {
-        position: absolute;
         z-index: 2;
-        left: 140px;
+        max-height: 600px;
         top: 5px;
       }
       svg {
@@ -31,24 +35,36 @@
     }
 
     &_info {
-      padding-left: 670px;
       padding-right: 20px;
+      padding-left: 200px;
       max-width: 1000px;
       &_name {
-        font-size: 90px;
+        font-size: 80px;
         font-weight: 700;
         color: #272727;
+        line-height: 70px;
       }
       &_about {
-        font-size: 32px;
+        font-size: 1.5rem;
         font-weight: 500;
         color: #393838;
       }
     }
   }
 }
+
 @media only screen and (max-width: 1025px) {
   .container {
+    &_heading {
+    font-size: 64px;
+    font-weight: 700;
+    line-height:74px;
+    color: #272727;
+    word-wrap: break-word;
+    max-width: 1040px;
+    
+    margin-bottom: 150px;
+  }
     &_member {
       flex-direction: column;
       padding-left: 20px;
@@ -58,7 +74,7 @@
       &_info {
         padding-left: 50px;
         padding-right: 0px;
-        padding-top: 560px;
+        padding-top: 0px;
       }
     }
   }

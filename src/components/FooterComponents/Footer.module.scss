@@ -8,13 +8,13 @@
   );
   // background-image: var(--gradient);
   height: 270px;
-  border: 1px solid #707070;
+
   &_up {
     display: flex;
     justify-content: space-between;
     &_leftSide {
       &_paragraph {
-        font-size: 1.875rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #ffffff;
       }
@@ -30,16 +30,16 @@
           box-shadow: none;
           border: none;
           color: #23242a;
-          font-size: 1em;
+          font-size: 1rem;
           letter-spacing: 0.05em;
           transition: 0.5s;
           z-index: 10;
         }
         span {
           position: absolute;
-          left: 0;
+          left: 0.59rem;
           top: 0px;
-          font-size: 1.875rem;
+          font-size: 1.5rem;
           color: #fffdfd47;
           letter-spacing: 00.05em;
           transition: 0.5s;
@@ -71,7 +71,7 @@
     }
     &_rightSide {
       &_paragraph {
-        font-size: 1.3125rem;
+        font-size: 1rem;
         color: #ffffff;
         text-align: right;
       }
@@ -101,12 +101,12 @@
         }
       }
       &_paragraph {
-        font-size: 1.3128rem;
+        font-size: 1.5rem;
         color: #ffffff;
       }
     }
     &_name {
-      font-size: 32px;
+      font-size: 1.5rem;
       font-weight: 700;
       color: #ffffff;
     }
