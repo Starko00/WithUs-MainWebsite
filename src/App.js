@@ -13,7 +13,7 @@ function App() {
 
         <Routes>
           <Route exacth path="/" element={<HomePage />} />
-          <Route exacth path="team" element={<TeamPage />} />
+          <Route exacth path="/team" element={<TeamPage />} />
         </Routes>
         <Footer />
       </Router>
