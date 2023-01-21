@@ -52,7 +52,6 @@
   width: 0px;
   height: 0px;
 
-
   display: none;
   align-items: center;
   justify-content: center;
@@ -62,20 +61,152 @@
   animation: loading 1s ease-in-out 1s;
   animation-fill-mode: forwards; */
 }
-.mobileSection{
+.mobileSection {
   display: none;
 }
+.thirdSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  gap: 7.3rem;
+  padding-right: 40px;
+  margin-bottom: 100px;
+}
+.forthSection {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  gap: 7.3rem;
+  padding-right: 40px;
+  margin-bottom: 100px;
+}
+.textHolderThirdSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 40%;
+}
+.sectionTittle {
+  font-size: 5rem;
+  color: var(--textMainColor);
+  line-height: 5rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+.sectionSubTittle {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--textMainColor);
+}
+.sectionText {
+  font-size: 1.5rem;
+}
+.sectionImgHolder {
+  max-width: 800px;
+  border-radius: 60px;
+  overflow: hidden;
+}
+.sectionImgHolder img {
+  width: 100%;
+}
+.innerSectionHolder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 
+
+}
+.innerTittles{
+  color: var(--textMainColor);
+  font-size: 2rem;
+  line-height: 1.5rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+@media only screen and (max-width: 1024px) {
+  .thirdSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    gap: 4rem;
+    padding-right: 40px;
+    margin-bottom: 100px;
+  }
+  .forthSection {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    gap: 4rem;
+    padding-right: 40px;
+    margin-bottom: 100px;
+  }
+  .textHolderThirdSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 40%;
+  }
+  .sectionTittle {
+    font-size: 4rem;
+    color: var(--textMainColor);
+    line-height: 5rem;
+    padding: 0rem;
+    margin: 0rem;
+  }
+  .sectionSubTittle {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: var(--textMainColor);
+  }
+  .sectionText {
+    font-size: 1rem;
+  }
+  .sectionImgHolder {
+    max-width: 800px;
+    border-radius: 60px;
+    overflow: hidden;
+  }
+  .sectionImgHolder img {
+    width: 100%;
+  }
+  .innerSectionHolder{
+  display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+
+}
+.innerTittles{
+  color: var(--textMainColor);
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+}
 @media only screen and (max-width: 768px) {
   .mainHeroContainer {
     flex-direction: column-reverse;
     min-height: 100vh;
   }
-  .firstHeroHolder{
+  .firstHeroHolder {
     padding: 0rem;
     margin-bottom: -0.5rem;
   }
-  .mobileSection{
+  .mobileSection {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,8 +217,66 @@
     width: 100%;
     height: 100vh;
   }
-  .mobileSection h2{
+  .mobileSection h2 {
     font-weight: 400;
     font-size: 2rem;
+  }
+
+  .thirdSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    gap: 4rem;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .forthSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    gap: 4rem;
+    padding-right: 40px;
+    margin-bottom: 100px;
+  }
+  .textHolderThirdSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+
+    text-align: center;
+  }
+  .sectionTittle {
+    font-size: 3rem;
+    color: var(--textMainColor);
+    line-height: 3rem;
+    padding: 0rem;
+    margin: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  .sectionSubTittle {
+    font-size: 1.25rem;
+    width: 100%;
+    line-height: 1.25rem;
+    text-align: center;
+    color: var(--textMainColor);
+  }
+  .sectionText {
+    font-size: 1rem;
+  }
+  .sectionImgHolder {
+    max-width: 800px;
+    border-radius: 60px;
+    overflow: hidden;
+  }
+  .sectionImgHolder img {
+    width: 100%;
   }
 }

@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { HeroComponent } from "../components/HomePageComponents/HeroComponent";
 import { SecondSection } from "../components/HomePageComponents/SecondSection";
 import HomePageStyle from "./HomePageStyle.module.css";
+import sunrise from "../resources/img/sunrise.jpg";
+import graphich1 from "../resources/img/graphich1.png";
 export const HomePage = () => {
   const style = HomePageStyle;
   const [screenLoad, setScreenLoad] = useState(false);
@@ -42,13 +44,53 @@ export const HomePage = () => {
 
         <SecondSection />
       </div>
+      <div className={style.thirdSection}>
+        <div className={style.textHolderThirdSection}>
+          <h2 className={style.sectionTittle}>The way we do it</h2>
+          <h3 className={style.sectionSubTittle}>
+            Without any limits, just like the horizont
+          </h3>
+          <p className={style.sectionText}>
+            Great products start with great teams. Over the years, we’ve
+            maintained a high standard for attracting talent – only 1% of
+            applicants become a part of our teamGreat products start with great
+            teams. Over the years, we’ve maintained a high standard for
+            attracting talent – only 1% of applicants become a part of our
+            team..
+          </p>
+        </div>
+        <div className={style.sectionImgHolder}>
+          <img src={sunrise} alt="sunirse purple" />
+        </div>
+      </div>
 
-      <div className={style.mobileSection} data-order={"1"}>
-        <h2>
-          With nearly 10 years of collective knowledge, we use emrging
-          technologies to make your business trive.
-        </h2>
-        <button className="buttonMainMobile">Get to know our team</button>
+      <div className={style.forthSection}>
+        <div className={style.textHolderThirdSection}>
+          <h2 className={style.sectionTittle}>With expertise </h2>
+          <h3 className={style.sectionSubTittle}>
+          Thro simple steps, to make it as easy and professional as it could be, giving you resolute thro
+          </h3>
+          <div className={style.innerSectionHolder}>
+            <div className={style.innerTittles}>
+              <h4 className={style.innerTittle}>Strategy</h4>
+              <h4 className={style.innerTittle}>Design</h4>
+              <h4 className={style.innerTittle}>Development</h4>
+              <h4 className={style.innerTittle}>Optimization</h4>
+            </div>
+            <p className={style.sectionText}>
+            Great products start with great teams. Over the years, we’ve
+            maintained a high standard for attracting talent – only 1% of
+            applicants become a part of our teamGreat products start with great
+            teams. Over the years, we’ve maintained a high standard for
+            attracting talent – only 1% of applicants become a part of our
+            team..
+          </p>
+          </div>
+          
+        </div>
+        <div className={style.sectionImgHolder}>
+          <img src={graphich1} alt="expertise graphich" />
+        </div>
       </div>
     </div>
   );
