@@ -5,6 +5,8 @@ import HomePageStyle from "./HomePageStyle.module.css";
 import sunrise from "../resources/img/sunrise.jpg";
 import graphich1 from "../resources/img/graphich1.png";
 import { WorkComponent } from "../components/HomePageComponents/WorkComponent";
+import { ContactFormComponent } from "../components/ContactFormComponent";
+import Asset1 from "../resources/img/asset1.svg";
 export const HomePage = () => {
   const style = HomePageStyle;
   const [screenLoad, setScreenLoad] = useState(false);
@@ -69,7 +71,8 @@ export const HomePage = () => {
         <div className={style.textHolderThirdSection}>
           <h2 className={style.sectionTittle}>With expertise </h2>
           <h3 className={style.sectionSubTittle}>
-          Thro simple steps, to make it as easy and professional as it could be, giving you resolute thro
+            Thro simple steps, to make it as easy and professional as it could
+            be, giving you resolute thro
           </h3>
           <div className={style.innerSectionHolder}>
             <div className={style.innerTittles}>
@@ -79,15 +82,14 @@ export const HomePage = () => {
               <h4 className={style.innerTittle}>Optimization</h4>
             </div>
             <p className={style.sectionText}>
-            Great products start with great teams. Over the years, we’ve
-            maintained a high standard for attracting talent – only 1% of
-            applicants become a part of our teamGreat products start with great
-            teams. Over the years, we’ve maintained a high standard for
-            attracting talent – only 1% of applicants become a part of our
-            team..
-          </p>
+              Great products start with great teams. Over the years, we’ve
+              maintained a high standard for attracting talent – only 1% of
+              applicants become a part of our teamGreat products start with
+              great teams. Over the years, we’ve maintained a high standard for
+              attracting talent – only 1% of applicants become a part of our
+              team..
+            </p>
           </div>
-          
         </div>
         <div className={style.sectionImgHolder}>
           <img src={graphich1} alt="expertise graphich" />
@@ -95,11 +97,37 @@ export const HomePage = () => {
       </div>
 
       <div className={style.workContainer}>
-      <h2 className={style.sectionTittle}>Here is some of our work</h2>
-      <div className={style.workContainerInner}>
-        <WorkComponent/>
+        <h2 className={style.sectionTittle}>Here is some of our work</h2>
+        <div className={style.workContainerInner}>
+          <WorkComponent />
+        </div>
+        <div className={style.fifthSection}>
+          <h2 className={style.sectionTittle}>
+            Our clients are now even more sexy
+          </h2>
+          <h3 className={style.sectionSubTittle}>
+            And theit customers love it, recognizable brands
+          </h3>
+          <div className={style.ClientsHolder}>
+            client list to be displayed soon
+          </div>
+        </div>
       </div>
-      
+      <div className={style.contactFormHolder}>
+        <h2 className={style.sectionTittle} style={{ color: "white" }}>
+          Contact us and get a free qvote
+        </h2>
+        <h3
+          className={style.sectionSubTittle}
+          style={{ color: "white", opacity: "0.75" }}
+        >
+          We answer within 12h
+        </h3>
+
+        <div className={style.innerSectionHolderContact} id="contact">
+          <ContactFormComponent />
+          <img src={Asset1} />
+        </div>
       </div>
     </div>
   );

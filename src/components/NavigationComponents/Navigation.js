@@ -68,7 +68,7 @@ export const Navigation = () => {
       </ul>
       <div className={style.logoHolder}>
         <div>
-          <button className="buttonMainMobile">Get in touch</button>
+          <a href="/#contact"><button className="buttonMainMobile">Get in touch</button></a>
         </div>
         <img src={logo} alt="logo" />
       </div>
