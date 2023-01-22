@@ -4,6 +4,7 @@ import { SecondSection } from "../components/HomePageComponents/SecondSection";
 import HomePageStyle from "./HomePageStyle.module.css";
 import sunrise from "../resources/img/sunrise.jpg";
 import graphich1 from "../resources/img/graphich1.png";
+import { WorkComponent } from "../components/HomePageComponents/WorkComponent";
 export const HomePage = () => {
   const style = HomePageStyle;
   const [screenLoad, setScreenLoad] = useState(false);
@@ -91,6 +92,14 @@ export const HomePage = () => {
         <div className={style.sectionImgHolder}>
           <img src={graphich1} alt="expertise graphich" />
         </div>
+      </div>
+
+      <div className={style.workContainer}>
+      <h2 className={style.sectionTittle}>Here is some of our work</h2>
+      <div className={style.workContainerInner}>
+        <WorkComponent/>
+      </div>
+      
       </div>
     </div>
   );

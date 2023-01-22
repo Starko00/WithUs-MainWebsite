@@ -129,6 +129,20 @@
   padding: 0rem;
   margin: 0rem;
 }
+
+.workContainerInner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 40px;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 1024px) {
   .thirdSection {
     display: flex;
