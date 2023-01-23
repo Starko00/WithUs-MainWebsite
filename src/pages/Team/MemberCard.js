@@ -6,13 +6,12 @@ export const MemberCard = (props) => {
   return (
     <div className={style.container_member} data-position={props.card.positon}>
       <div className={style.container_member_img}>
-        <img src={props.card.img} alt="member" />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="640"
-          height="618"
-          viewBox="0 0 640 618"
-        >
+        <img
+          className={style.container_member_img_i}
+          src={props.card.img}
+          alt="member"
+        />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 618">
           <defs>
             <linearGradient id="myGradient">
               <stop offset="0%" stopColor="#53309a" />
@@ -32,7 +31,7 @@ export const MemberCard = (props) => {
         </svg>
       </div>
 
-      <div className={style.container_member_info} >
+      <div className={style.container_member_info}>
         <h2 className={style.container_member_info_name}>{props.card.name}</h2>
         <p className={style.container_member_info_about}>{props.card.info}</p>
       </div>
