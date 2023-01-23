@@ -1,0 +1,27 @@
+.aboutUsHolder{
+
+   padding-top: 100px;
+}
+.innerContainer{
+    background-image:linear-gradient(
+        180deg,
+        #53309a 0%,
+        #9b0fab 28.7%,
+        #d76893 100%
+      );
+    color: white;
+    padding: 40px;
+
+}
+.innerContainer h1{
+    font-size: 5rem;
+}
+.innerContainer p{
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 1024px){
+    .aboutUsHolder{
+
+        padding-top: 0px;
+     } 
+}
