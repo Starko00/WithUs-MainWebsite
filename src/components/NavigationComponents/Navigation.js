@@ -65,6 +65,13 @@ export const Navigation = () => {
         >
           <li>About</li>
         </NavLink>
+        <NavLink
+          className={style.link}
+          to={"blog"}
+          onClick={() => changeMenuState()}
+        >
+          <li>Blog</li>
+        </NavLink>
       </ul>
       <div className={style.logoHolder}>
         <div>

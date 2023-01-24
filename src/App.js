@@ -11,6 +11,8 @@ import { HomePage } from "./pages/HomePage";
 import { TeamPage } from "./pages/Team/TeamPage";
 import ScrollToTop from "./components/ScrollToTop";
 import { AboutUs } from "./pages/AboutUs/AboutUsPage";
+import { BlogPage } from "./pages/Blog/BlogPage";
+import { BlogComponentLong } from "./components/BlogComponents.js/BlogComponentLong";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route exacth path="/" element={<HomePage />} />
           <Route exacth path="/team" element={<TeamPage />} />
           <Route exacth path="/about" element={<AboutUs />} />
+          <Route exacth path="/blog" element={<BlogPage/>}/>
+          <Route exacth path="/blogSingle" element={<BlogComponentLong/>}/>
         </Routes>
         <Footer />
       </Router>
