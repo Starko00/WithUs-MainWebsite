@@ -7,12 +7,19 @@ export const AboutUs = () => {
       <div className={style.innerContainer}>
         <h1>About us and our mission</h1>
         <p>
-          we believe that inside every impossible is a possible trying to get
-          out. We are a team of creative thinkers and problem solvers dedicated
-          to expanding the limits of what is possible by helping brands achieve
-          their goals. We utilize our experience working with major global
-          brands to fuel creative innovation that delivers real results. Scroll
-          down to find out a little bit about who makes this all happen.
+          At WithUS, we believe in the power of transparency and communication.
+          We work closely with our clients to ensure that they are always
+          informed and involved in the process, and we provide regular progress
+          updates so that you can see the impact of our services on your
+          business. <br/> Finally, WithUS is a cost-effective agency. Our services are
+          designed to deliver real results without breaking the bank. We believe
+          that businesses of all sizes should have access to high-quality
+          digital services, and we work hard to make this a reality for our
+          clients.<br/> In conclusion, WithUS is a great choice for your B2B digital
+          needs because of our team of experienced professionals, dedication to
+          delivering results, transparency and communication, and cost-effective
+          services. Contact us today to learn more about how we can help your
+          business succeed in the digital world.
         </p>
         <ContactFormComponent />
       </div>

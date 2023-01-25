@@ -50,16 +50,13 @@ export const HomePage = () => {
       <div className={style.thirdSection}>
         <div className={style.textHolderThirdSection}>
           <h2 className={style.sectionTittle}>The way we do it</h2>
-          <h3 className={style.sectionSubTittle}>
-            Without any limits, just like the horizont
-          </h3>
+          <h3 className={style.sectionSubTittle}>by hitting targets</h3>
           <p className={style.sectionText}>
-            Great products start with great teams. Over the years, we’ve
-            maintained a high standard for attracting talent – only 1% of
-            applicants become a part of our teamGreat products start with great
-            teams. Over the years, we’ve maintained a high standard for
-            attracting talent – only 1% of applicants become a part of our
-            team..
+            At WithUS, we believe in the power of transparency and
+            communication. We work closely with our clients to ensure that they
+            are always informed and involved in the process, and we provide
+            regular progress updates so that you can see the impact of our
+            services on your business.
           </p>
         </div>
         <div className={style.sectionImgHolder}>
@@ -71,8 +68,8 @@ export const HomePage = () => {
         <div className={style.textHolderThirdSection}>
           <h2 className={style.sectionTittle}>With expertise </h2>
           <h3 className={style.sectionSubTittle}>
-            Thro simple steps, to make it as easy and professional as it could
-            be, giving you resolute thro
+            By doing simple steps, to make it as easy and professional as it
+            could be, giving you resolute thro
           </h3>
           <div className={style.innerSectionHolder}>
             <div className={style.innerTittles}>
@@ -82,12 +79,11 @@ export const HomePage = () => {
               <h4 className={style.innerTittle}>Optimization</h4>
             </div>
             <p className={style.sectionText}>
-              Great products start with great teams. Over the years, we’ve
-              maintained a high standard for attracting talent – only 1% of
-              applicants become a part of our teamGreat products start with
-              great teams. Over the years, we’ve maintained a high standard for
-              attracting talent – only 1% of applicants become a part of our
-              team..
+              WithUS is a great choice for your B2B digital needs because of our
+              team of experienced professionals, dedication to delivering
+              results, transparency and communication, and cost-effective
+              services. Contact us today to learn more about how we can help
+              your business succeed in the digital world.
             </p>
           </div>
         </div>
@@ -115,7 +111,7 @@ export const HomePage = () => {
       </div>
       <div className={style.contactFormHolder}>
         <h2 className={style.sectionTittle} style={{ color: "white" }}>
-          Contact us and get a free qvote
+          Contact us and get a free quote{" "}
         </h2>
         <h3
           className={style.sectionSubTittle}

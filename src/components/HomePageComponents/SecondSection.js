@@ -27,19 +27,25 @@ export const SecondSection = () => {
         </div>
       </div>
       <div className={style.sectionMainText}>
-        <h1>Creating web solutions from squareone</h1>
+        <h1>Creating web solutions from square one</h1>
         <h2>We design, build and scale your online presence</h2>
 
         <div className={style.splitTextHolder}>
           <p>
-            Great products start with great teams. Over the years, we’ve
-            maintained a high standard for attracting talent – only 1% of
-            applicants become a part of our team.
+            When it comes to B2B businesses, having a website that is
+            specifically designed to target other businesses can make a huge
+            difference in terms of generating leads and closing deals. A B2B
+            website design agency will have the expertise and experience
+            necessary to create a website that speaks directly to other
+            businesses and addresses their specific needs and pain points
           </p>
           <p>
-            Great products start with great teams. Over the years, we’ve
-            maintained a high standard for attracting talent – only 1% of
-            applicants become a part of our team.
+            A B2B website should be professional, informative, and easy to
+            navigate. It should also be optimized for search engines, as many
+            B2B purchases are the result of online research. A B2B website
+            design agency will understand the unique needs of B2B businesses and
+            create a website that helps to establish trust and credibility with
+            potential customers.
           </p>
         </div>
       </div>
