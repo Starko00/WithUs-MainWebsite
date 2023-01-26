@@ -12,7 +12,12 @@
     object-fit: cover;
 }
 .textHolder p {
-  line-height: 1.4rem;
+  --max-lines:3;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--max-lines);
+  
   font-size: 1rem;
 }
 .textHolder h1 {
@@ -36,14 +41,7 @@
   padding-top: 1.5rem;
   flex-direction: column;
 }
-.textHolder p {
-  display: -webkit-box;
-  -webkit-line-clamp: 2 !important; /* number of lines to show */
-  line-clamp: 2 !important;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  overflow: hidden;
-}
+
 
 .textHolder:hover {
   box-sizing: border-box;

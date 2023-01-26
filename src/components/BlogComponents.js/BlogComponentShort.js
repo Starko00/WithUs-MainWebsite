@@ -4,7 +4,7 @@ export const BlogComponentShort = ({ blogData }) => {
   return (
     <div className={style.container}>
       
-      <img src="https://wallpaperaccess.com/full/82884.jpg" />
+      <img src={'http://www.with-us.me/static/blogImgs/'+blogData.img} />
       <div className={style.textHolder}>
         <h1>{blogData.tittle}</h1>
         <p>{blogData.text}</p>
