@@ -26,7 +26,8 @@ function App() {
           <Route exacth path="/team" element={<TeamPage />} />
           <Route exacth path="/about" element={<AboutUs />} />
           <Route exacth path="/blog" element={<BlogPage/>}/>
-          <Route exacth path="/blogSingle" element={<BlogComponentLong/>}/>
+          <Route exacth path="/blogSingle/:id" element={<BlogComponentLong/>}/>
+          
         </Routes>
         <Footer />
       </Router>

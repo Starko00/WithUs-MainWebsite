@@ -1,0 +1,74 @@
+.container{
+padding-top: 100px;
+display: flex;
+align-items: center;
+justify-content: center;    
+flex-direction: column;
+padding-left: 40px;
+color: var(--textMainColor);
+padding-right: 40px;
+box-sizing: border-box;
+}
+.container > *{
+    box-sizing: border-box;
+}
+.container h1{
+   font-size: 4rem;
+    color: var(--textMainColor);
+    line-height: 5rem;
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 80%;
+    margin-bottom: 50px;
+}
+.container h2{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    max-width: 80%;
+   
+}
+.innrContainer{
+   display: flex;
+    width: 100%;
+    gap: 10%;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+.listHolder{
+    width: 100%;
+}
+.listHolder ul{
+    position: -webkit-sticky;
+    width: 200px;
+    padding: 1rem;
+    
+    border-radius: 12px;
+   background-image: var(--gradient);
+   color: white ;
+   list-style: none;
+}
+.listHolder li{
+    font-size: 1.5rem;
+    color:white;
+    font-family: inherit
+}
+.container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 55ch;
+}
+.container a{
+    text-decoration: none;
+    color: var(--textMainColor);
+    font-size: inherit;
+
+}
+.container ul{
+    font-size: 1.5rem;
+    color: var(--textMainColor);
+}
+.container h3{
+    font-size: 2rem;
+}
