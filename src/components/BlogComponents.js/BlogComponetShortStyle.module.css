@@ -30,7 +30,6 @@
 }
 .textHolder {
   position: absolute;
-  width: 500px;
   background-color: rgba(128, 0, 128, 0.274);
   color: white;
   backdrop-filter: blur(10px);
@@ -66,7 +65,7 @@
     line-height: 1.8rem;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 700px) {
   .textHolder h1 {
     width: 190px;
     font-size: 1rem;
