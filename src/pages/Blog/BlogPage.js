@@ -43,12 +43,12 @@ export const BlogPage = () => {
       </div>
 
       <div className={style.blogsectionHolder}>
-      {blogsData == "null"
-        ? "No blogs at the moment"
-        : blogsData.map((blog) => {
-            return <BlogComponentShort blogData={blog} />;
-          })}
-    </div>
+        {blogsData == "null"
+          ? "No blogs at the moment"
+          : blogsData.map((blog) => {
+              return <BlogComponentShort blogData={blog} />;
+            })}
+      </div>
     </div>
   );
 };

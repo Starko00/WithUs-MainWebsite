@@ -1,23 +1,24 @@
 .container {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   aspect-ratio: 16/10;
-
+  background-color: rebeccapurple;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 12px;
 }
-.container img{
-    width: 100%;
-    object-fit: cover;
+.container img {
+  width: 100%;
+  object-fit: cover;
 }
 .textHolder p {
-  --max-lines:3;
+  --max-lines: 3;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--max-lines);
-  
+
   font-size: 1rem;
 }
 .textHolder h1 {
@@ -25,11 +26,12 @@
   font-size: 2rem;
   margin: 0rem;
   padding: 0rem;
+  width: 380px;
 }
 .textHolder {
   position: absolute;
   width: 500px;
-  background-color:rgba(128, 0, 128, 0.274);
+  background-color: rgba(128, 0, 128, 0.274);
   color: white;
   backdrop-filter: blur(10px);
   bottom: -8rem;
@@ -42,13 +44,32 @@
   flex-direction: column;
 }
 
-
 .textHolder:hover {
   box-sizing: border-box;
   height: 100%;
-  
+
   bottom: 0rem;
   transition: 400ms;
   transition-property: all;
   transition-timing-function: ease-in-out;
+}
+@media only screen and (max-width: 1710px) {
+  .textHolder h1 {
+    width: 350px;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .textHolder h1 {
+    width: 260px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .textHolder h1 {
+    width: 190px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
