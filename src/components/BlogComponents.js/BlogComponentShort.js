@@ -11,7 +11,7 @@ export const BlogComponentShort = ({ blogData }) => {
       <div className={style.textHolder}>
         <h1>{blogData.tittle}</h1>
         <p>{blogData.text}</p>
-        <div><button className="buttonMainMobile" onClick = {()=>{ navigate(`/blogSingle/${blogData.tittle.replaceAll(' ','-')}`,{state: blogData}) }}>Read more</button></div>
+        <div className={style.buttonHolder}><button className="buttonMainMobile" onClick = {()=>{ navigate(`/blogSingle/${blogData.tittle.replaceAll(' ','-')}`,{state: blogData}) }}>Read more</button></div>
       </div>
     </div>
   );
