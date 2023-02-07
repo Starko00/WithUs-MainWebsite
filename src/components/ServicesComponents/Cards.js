@@ -3,6 +3,9 @@ import CardsStyle from "./CardsStyle.module.scss";
 
 export const Cards = (props) => {
   const style = CardsStyle;
+  const handleClick = () => {
+    console.log("radi");
+  };
   return (
     <div
       className={style.container}
@@ -11,7 +14,10 @@ export const Cards = (props) => {
       }}
     >
       <h1 className={style.container_header}>{props.card.header}</h1>
-      <button className={`buttonMainMobile ${style.container_btn}`}>
+      <button
+        className={`buttonMainMobile ${style.container_btn}`}
+        onClick={handleClick}
+      >
         Read More
       </button>
     </div>

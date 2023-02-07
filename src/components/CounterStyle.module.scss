@@ -39,3 +39,21 @@
     }
   }
 }
+//Mobile design
+@media only screen and (max-width: 550px) {
+  .counter {
+    h2 {
+      line-height: 2.1rem;
+    }
+
+    h3 {
+      line-height: 10rem;
+    }
+    &_achivementsHolder {
+      flex-direction: column;
+      &_achivement {
+        gap: 1rem;
+      }
+    }
+  }
+}
