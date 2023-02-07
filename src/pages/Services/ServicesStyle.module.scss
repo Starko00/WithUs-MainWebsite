@@ -10,7 +10,8 @@
   &_leftSide {
     padding: 20px;
     border-radius: 10px;
-    height: -webkit-fill-available;
+    height: 685px;
+    width: 665px;
     background-image: linear-gradient(
       165deg,
       #53309a 0%,
@@ -47,12 +48,21 @@
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 770px) {
+  .container {
+    &_leftSide {
+      width: 400px;
+    }
+  }
+}
 @media only screen and (max-width: 550px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
     &_leftSide {
       min-width: 280px;
+      width: unset;
+      height: -webkit-fill-available;
 
       h2 {
         font-size: 2.5rem;
