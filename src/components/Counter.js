@@ -15,14 +15,14 @@ export const Counter = () => {
           <h4>
             <CountUp duration={0.5} end={10} />
           </h4>
-          <h5>WEBSITES</h5>
+          <h5>WEB SITES</h5>
         </div>
 
         <div className={style.counter_achivementsHolder_achivement}>
           <h4>
             <CountUp duration={0.5} end={1} />
           </h4>
-          <h5>WEBAPP</h5>
+          <h5>WEB APPS</h5>
         </div>
         <div className={style.counter_achivementsHolder_achivement}>
           <h4>
