@@ -31,6 +31,8 @@
     color: white;
     margin: 0;
     padding: 35px 0 0 25px;
+    position: inherit;
+    z-index: 5;
   }
 
   &_btn {
