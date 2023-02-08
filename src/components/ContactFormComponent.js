@@ -12,7 +12,6 @@ export const ContactFormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
 
     setResponse(
       <p className={style.response}>
@@ -27,14 +26,14 @@ export const ContactFormComponent = () => {
         service: service,
         budget: budget,
       })
-      .then((res) =>{
-        if(res.status === 200){
-          setBudget("")
-          setEmail("")
-          setFirstName("")
-          setService("")
-          setHowDidYou("")
-          setResponse("")
+      .then((res) => {
+        if (res.status === 200) {
+          setBudget("");
+          setEmail("");
+          setFirstName("");
+          setService("");
+          setHowDidYou("");
+          setResponse("");
         }
       });
   };
@@ -47,7 +46,7 @@ export const ContactFormComponent = () => {
         }}
       >
         <div className={style.inputHolder}>
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             value={email}
@@ -57,7 +56,7 @@ export const ContactFormComponent = () => {
         </div>
 
         <div className={style.inputHolder}>
-          <label for="firstName">First name</label>
+          <label htmlFor="firstName">First name</label>
           <input
             type="text"
             value={firstName}
@@ -67,7 +66,7 @@ export const ContactFormComponent = () => {
         </div>
 
         <div className={style.inputHolder}>
-          <label for="howDidYouHearAboutUs">
+          <label htmlFor="howDidYouHearAboutUs">
             How did you hear about us? (optional)
           </label>
           <input
@@ -78,7 +77,7 @@ export const ContactFormComponent = () => {
           ></input>
         </div>
         <div className={style.inputHolder}>
-          <label for="services">How can we help you?</label>
+          <label htmlFor="services">How can we help you?</label>
           <input
             type="text"
             value={service}
@@ -88,7 +87,7 @@ export const ContactFormComponent = () => {
         </div>
 
         <div className={style.inputHolder}>
-          <label for="budget">What is your estemated budget?</label>
+          <label htmlFor="budget">What is your estemated budget?</label>
           <input
             type="text"
             value={budget}

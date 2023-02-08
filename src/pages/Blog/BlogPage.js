@@ -2,6 +2,8 @@ import BlogPageStyle from "./BlogPageStyle.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { BlogComponentShort } from "../../components/BlogComponents.js/BlogComponentShort";
+import CountUp from "react-countup";
+
 export const BlogPage = () => {
   const [blogsData, setBlogsData] = useState([]);
   const style = BlogPageStyle;
@@ -24,7 +26,9 @@ export const BlogPage = () => {
           <div className={style.left}>
             <h3>Number of blogs</h3>
 
-            <p>5</p>
+            <p>
+              <CountUp duration={0.7} end={blogsData.length} />
+            </p>
           </div>
           <div className={style.right}>
             <h3>Why do we even have a blog?</h3>
