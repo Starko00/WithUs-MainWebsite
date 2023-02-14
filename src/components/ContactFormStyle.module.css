@@ -4,7 +4,7 @@
   justify-content: flex-start;
 }
 .contactForm div button {
-    width: 150px;
+  width: 150px;
 }
 .contactForm {
   display: flex;
@@ -51,90 +51,92 @@
   color: #50bfa5;
 }
 
-@media only screen and (max-width: 1251px){
-   
-      .inputHolder {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 500px;
-        height: 100%;
-      }
-      .inputHolder label {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: white;
-        opacity: 0.7;
-        position: relative;
-        z-index: 0;
-      }
-      
-      .inputHolder input {
-        font-size: 1.5rem;
-        z-index: 1;
-        background-color: rgba(240, 248, 255, 0);
-        border: none;
-        border-bottom: 3px solid white;
-        border-radius: 0.1rem;
-        color: rgb(255, 255, 255);
-      }
-      .inputHolder input:valid {
-      }
-      .inputHolder input:invalid {
-        border-bottom: 3px solid rgb(139, 139, 139);
-      }
-      .inputHolder input:focus {
-        outline: none;
-        color: rgb(255, 255, 255);
-      }
-      .response {
-        font-size: 1.5rem;
-        color: #50bfa5;
-      }
-      
+@media only screen and (max-width: 1251px) {
+  .inputHolder {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    height: 100%;
+  }
+  .inputHolder label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+    position: relative;
+    z-index: 0;
+  }
+
+  .inputHolder input {
+    font-size: 1.5rem;
+    z-index: 1;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0.1rem;
+    color: rgb(255, 255, 255);
+  }
+  .inputHolder input:valid {
+  }
+  .inputHolder input:invalid {
+    border-bottom: 3px solid rgb(139, 139, 139);
+  }
+  .inputHolder input:focus {
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+  .response {
+    font-size: 1.5rem;
+    color: #50bfa5;
+  }
 }
 
-@media only screen and (max-width: 728px){
-   .contactForm{
+@media only screen and (max-width: 728px) {
+  .contactForm {
     align-items: center;
-   }
-    .inputHolder {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      width: 350px;
-      height: 100%;
-    }
-    .inputHolder label {
-      font-size: 1rem;
-      font-weight: 500;
-      color: white;
-      opacity: 0.7;
-      position: relative;
-      z-index: 0;
-    }
-    
-    .inputHolder input {
-      font-size: 1rem;
-      z-index: 1;
-      background-color: rgba(240, 248, 255, 0);
-      border: none;
-      border-bottom: 3px solid white;
-      border-radius: 0.1rem;
-      color: rgb(255, 255, 255);
-    }
-    .inputHolder input:valid {
-    }
-    .inputHolder input:invalid {
-      border-bottom: 3px solid rgb(139, 139, 139);
-    }
-    .inputHolder input:focus {
-      outline: none;
-      color: rgb(255, 255, 255);
-    }
-    .response {
-      font-size: 1.5rem;
-      color: #50bfa5;
-    }
-    
+  }
+  .inputHolder {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 100%;
+  }
+  .inputHolder label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    opacity: 0.7;
+    position: relative;
+    z-index: 0;
+  }
+
+  .inputHolder input {
+    font-size: 1rem;
+    z-index: 1;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0.1rem;
+    color: rgb(255, 255, 255);
+  }
+  .inputHolder input:valid {
+  }
+  .inputHolder input:invalid {
+    border-bottom: 3px solid rgb(139, 139, 139);
+  }
+  .inputHolder input:focus {
+    outline: none;
+    color: rgb(255, 255, 255);
+  }
+  .response {
+    font-size: 1.5rem;
+    color: #50bfa5;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .inputHolder {
+    width: 320px;
+  }
 }

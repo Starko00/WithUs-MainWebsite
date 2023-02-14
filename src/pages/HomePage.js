@@ -72,12 +72,6 @@ export const HomePage = () => {
             could be, giving you resolute thro
           </h3>
           <div className={style.innerSectionHolder}>
-            <div className={style.innerTittles}>
-              <h4 className={style.innerTittle}>Strategy</h4>
-              <h4 className={style.innerTittle}>Design</h4>
-              <h4 className={style.innerTittle}>Development</h4>
-              <h4 className={style.innerTittle}>Optimization</h4>
-            </div>
             <p className={style.sectionText}>
               WithUS is a great choice for your B2B digital needs because of our
               team of experienced professionals, dedication to delivering
@@ -122,7 +116,7 @@ export const HomePage = () => {
 
         <div className={style.innerSectionHolderContact} id="contact">
           <ContactFormComponent />
-          <img src={Asset1} />
+          <img src={Asset1} alt="With-Us" />
         </div>
       </div>
     </div>

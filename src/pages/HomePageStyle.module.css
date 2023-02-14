@@ -1,4 +1,3 @@
-
 .container {
   display: flex;
   flex-direction: column;
@@ -17,17 +16,17 @@
     width: 0%;
   }
 }
-.innerSectionHolderContact{ 
+.innerSectionHolderContact {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
 }
-.innerSectionHolderContact img{
+.innerSectionHolderContact img {
   width: 40%;
 }
-.contactFormHolder{
+.contactFormHolder {
   background-image: linear-gradient(
     180deg,
     #53309a 0%,
@@ -39,11 +38,12 @@
   padding-bottom: 50px;
   padding-top: 50px;
 }
-.fifthSection{
+.fifthSection {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 10px 0 10px;
 }
 .loadingBanner[data-load="false"] {
   background: var(--gradient);
@@ -97,7 +97,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 40px;
   gap: 7.3rem;
   padding-right: 40px;
@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 40px;
   gap: 7.3rem;
   padding-right: 40px;
@@ -167,6 +167,7 @@
   flex-direction: column;
   gap: 2rem;
   padding-left: 40px;
+  margin: auto;
   margin-bottom: 100px;
 }
 
@@ -181,10 +182,10 @@
     padding-right: 40px;
     margin-bottom: 100px;
   }
-  .contactFormHolder img{
+  .contactFormHolder img {
     display: none;
   }
-  .innerSectionHolderContact{
+  .innerSectionHolderContact {
     align-items: center;
     justify-content: center;
   }
@@ -302,7 +303,7 @@
     text-align: center;
   }
   .sectionTittle {
-    font-size: 3rem;
+    font-size: var(--mobileXL);
     color: var(--textMainColor);
     line-height: 3rem;
     padding: 0rem;
@@ -311,14 +312,16 @@
     text-align: center;
   }
   .sectionSubTittle {
-    font-size: 1.25rem;
+    font-size: var(--mobileL);
+    font-weight: 500;
     width: 100%;
-    line-height: 1.25rem;
+    line-height: 2.25rem;
     text-align: center;
     color: var(--textMainColor);
   }
   .sectionText {
-    font-size: 1rem;
+    font-size: var(--mobileM);
+    font-weight: 400;
   }
   .sectionImgHolder {
     max-width: 800px;

@@ -1,22 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   --textMainColor: #393838;
-  --gradient: linear-gradient(
-    0.24deg,
-    #53309a 0%,
-    #9b0fab 28.7%,
-    #d76893 100%
-  );
+  --gradient: linear-gradient(0.24deg, #53309a 0%, #9b0fab 28.7%, #d76893 100%);
   --darkPurple: #5934a5;
+  --mobileXXL: 3rem;
+  --mobileXL: 2.5rem;
+  --mobileL: 2rem;
+  --mobileM: 1.5rem;
+  --mobileS: 1rem;
 }
 body > * {
   box-sizing: border-box;
   font-family: "Poppins";
-  
 }
 
 .buttonMainMobile {
- background-color: #3d2372;
+  background-color: #3d2372;
   border-radius: 12.5px;
   border: none;
   z-index: 0;

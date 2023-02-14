@@ -70,11 +70,7 @@
   scale: 1.1;
 }
 
-
-
-
-
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width: 1400px) {
   .container {
     display: grid;
     grid-template-columns: 1.2fr 1.6fr;
@@ -137,7 +133,7 @@
     overflow: hidden;
     background-color: blue;
   }
-  
+
   .right img:hover {
     cursor: pointer;
     scale: 1.1;
@@ -146,12 +142,9 @@
     cursor: pointer;
     scale: 1.1;
   }
-   
 }
 
-
-
-@media only screen and (max-width:1183px) {
+@media only screen and (max-width: 1183px) {
   .container {
     display: grid;
     grid-template-columns: 1.2fr 1.6fr;
@@ -214,7 +207,7 @@
     overflow: hidden;
     background-color: blue;
   }
-  
+
   .right img:hover {
     cursor: pointer;
     scale: 1.1;
@@ -223,17 +216,16 @@
     cursor: pointer;
     scale: 1.1;
   }
-   
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   .container {
     display: flex;
-   
+
     max-width: 100%;
     gap: 0px 0px;
     gap: 0.5rem;
-    
+
     align-items: center;
     position: relative;
   }
@@ -271,7 +263,7 @@
   }
   .left {
     aspect-ratio: 9/16;
-    width:320px;
+    width: 320px;
     border-radius: 1.5rem;
     overflow: hidden;
     background-color: red;
@@ -289,7 +281,7 @@
     overflow: hidden;
     background-color: blue;
   }
-  
+
   .right img:hover {
     cursor: pointer;
     scale: 1.1;
@@ -298,17 +290,16 @@
     cursor: pointer;
     scale: 1.1;
   }
-   
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   .container {
     display: flex;
-   
+
     max-width: 100%;
     gap: 0px 0px;
     gap: 0.5rem;
-    
+
     align-items: center;
     position: relative;
   }
@@ -346,7 +337,7 @@
   }
   .left {
     aspect-ratio: 9/16;
-    width:250px;
+    width: 250px;
     border-radius: 1.5rem;
     overflow: hidden;
     background-color: red;
@@ -364,7 +355,7 @@
     overflow: hidden;
     background-color: blue;
   }
-  
+
   .right img:hover {
     cursor: pointer;
     scale: 1.1;
@@ -373,10 +364,7 @@
     cursor: pointer;
     scale: 1.1;
   }
-   
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -436,5 +424,10 @@
   .left img:hover {
     cursor: pointer;
     scale: 1.1;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .inner {
+    aspect-ratio: 15/9;
   }
 }

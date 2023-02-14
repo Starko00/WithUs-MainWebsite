@@ -122,7 +122,7 @@
     text-align: center;
   }
   .blogHeddingSection h1 {
-    font-size: 3rem;
+    font-size: var(--mobileXXL);
   }
   .blogHeddingSection h2 {
     max-width: unset;
