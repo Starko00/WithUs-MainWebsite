@@ -50,7 +50,7 @@ export const BlogPage = () => {
         {blogsData == "null"
           ? "No blogs at the moment"
           : blogsData.map((blog) => {
-              return <BlogComponentShort blogData={blog} />;
+              return <BlogComponentShort key={blog._id} blogData={blog} />;
             })}
       </div>
     </div>
